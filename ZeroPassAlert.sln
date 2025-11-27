@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroPassAlert", "ZeroPassAlert\ZeroPassAlert.csproj", "{143FF022-5388-4AE9-8FA3-EE6A87EC2719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{143FF022-5388-4AE9-8FA3-EE6A87EC2719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143FF022-5388-4AE9-8FA3-EE6A87EC2719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143FF022-5388-4AE9-8FA3-EE6A87EC2719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143FF022-5388-4AE9-8FA3-EE6A87EC2719}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C288B83-8F08-4CA3-9D64-CA9FD4844B75}
+	EndGlobalSection
+EndGlobal

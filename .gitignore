@@ -1,0 +1,11 @@
+.vs/
+ZeroPass/bin/
+ZeroPass/obj/
+ZeroPassSetup/Debug/
+ZeroPassSetup/Release/
+ZeroPassUpdater/bin/
+ZeroPassUpdater/obj/
+CustomAction/bin/
+CustomAction/obj/
+
+/packages/
