@@ -47,3 +47,4 @@ C:\Users\LG\Desktop\work\gimpo\zeropass-alert\ZeroPassAlert\obj\Debug\ZeroPassAl
 C:\Users\LG\Desktop\work\gimpo\zeropass-alert\ZeroPassAlert\obj\Debug\ZeroPass.8324CFD2.Up2Date
 C:\Users\LG\Desktop\work\gimpo\zeropass-alert\ZeroPassAlert\obj\Debug\ZeroPassAlert.exe
 C:\Users\LG\Desktop\work\gimpo\zeropass-alert\ZeroPassAlert\obj\Debug\ZeroPassAlert.pdb
+C:\Users\LG\Desktop\work\gimpo\zeropass-alert\ZeroPassAlert\obj\Debug\ZeroPassAlert.exe.config

@@ -38,6 +38,7 @@ namespace ZeroPassAlert
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             AuthUtil.SetAuthInfo("0000");
+            AppGlobal.CorpCode = ConfigurationManager.AppSettings["CORP_CODE"];
             ShowHome();
         }
 
