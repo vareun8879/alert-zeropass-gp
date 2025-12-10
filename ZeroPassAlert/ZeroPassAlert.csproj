@@ -81,10 +81,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="enum\ControlType.cs" />
-    <Compile Include="enum\TimerType.cs" />
-    <Compile Include="enum\ViewType.cs" />
+    <Compile Include="Enum\ControlType.cs" />
+    <Compile Include="Enum\TimerType.cs" />
+    <Compile Include="Enum\ViewType.cs" />
     <Compile Include="LongPolling\LongPoller.cs" />
+    <Compile Include="Media\PlayAlertSound.cs" />
     <Compile Include="Overlays\AlertOverlay.xaml.cs">
       <DependentUpon>AlertOverlay.xaml</DependentUpon>
     </Compile>
@@ -160,6 +161,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ZeroPassIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

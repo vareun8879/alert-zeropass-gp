@@ -4,9 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using ZeroPassAlert.Media;
 using ZeroPassAlert.Utils;
 
 namespace ZeroPassAlert.LongPolling
@@ -64,6 +66,8 @@ namespace ZeroPassAlert.LongPolling
                     {
                         var main = Application.Current.MainWindow as MainWindow;
                         main?.ShowAlertOverlay(evt);
+
+                        PlayAlertSound.PlayAlert();
                     });
 
                     var ackUrl = $"visitor/alert";

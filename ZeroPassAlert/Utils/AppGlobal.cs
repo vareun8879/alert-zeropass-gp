@@ -8,10 +8,10 @@ namespace ZeroPassAlert.Utils
     {
         public static string ServiceType = "ZEROPASS";
 
-        //public const string UserAgent = "ZeroPass-KioskClient";
+        public const string UserAgent = "ZeroPass-KioskClient";
 
         // 테스트용 설정
-        public const string UserAgent = "KIOSK";
+        //public const string UserAgent = "KIOSK";
 
         public static long TodayVisitorCount = 0;
 
@@ -63,7 +63,7 @@ namespace ZeroPassAlert.Utils
         //public static string KioskUrl = "/zeropass/kiosk/";
 
         // 테스트용 설정
-        public static string KioskUrl = "/digitalsign/kiosk/";
+        public static string KioskUrl = "/zeropass/kiosk/";
 
         public static string APIUrl = $"{BaseUrl}{KioskUrl}";
 

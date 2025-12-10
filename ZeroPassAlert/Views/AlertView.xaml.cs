@@ -31,7 +31,7 @@ namespace ZeroPassAlert.Views
         }
         private async void AlertView_Loaded(object sender, RoutedEventArgs e)
         {
-            ResponseResult response = await RestUtil.GetDataAsync("visitors/" + AppGlobal.CorpCode, null);
+            ResponseResult response = await RestUtil.GetDataAsync("visitor/alert/today/" + AppGlobal.CorpCode, null);
 
             // 방문자 수 최초 로딩
             if (response.ExceptionMessage != null)
