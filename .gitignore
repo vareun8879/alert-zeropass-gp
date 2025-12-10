@@ -1,6 +1,10 @@
 .vs/
 ZeroPassAlert/bin/
+ZeroPassAlert/bin/*
+ZeroPassAlert/bin/**
 ZeroPassAlert/obj/
+ZeroPassAlert/obj/*
+ZeroPassAlert/obj/**
 ZeroPassSetup/Debug/
 ZeroPassSetup/Release/
 ZeroPassUpdater/bin/
