@@ -22,7 +22,7 @@ namespace ZeroPassAlert.Media
 
             try
             {
-                string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "notification.mp3");
+                string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Alert", "notification.mp3");
                 _player.Open(new Uri(path));
                 _player.Play();
             }
