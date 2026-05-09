@@ -33,7 +33,7 @@
             <!-- 본문 -->
             <StackPanel Grid.Row="1" Margin="10 10 10 20">
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,5" HorizontalAlignment="Center">
-                    <TextBlock Text="{Binding TodayDate, StringFormat='{}{0:yyyy년 MM월 dd일 HH:mm:ss}'}" 
+                    <TextBlock Text="{Binding VisitDt, StringFormat='{}{0:yyyy년 MM월 dd일 HH:mm:ss}'}"
                                 FontSize="30"
                                 HorizontalAlignment="Center"
                                 TextAlignment="Center"/>

@@ -54,7 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -86,16 +86,17 @@
     <Compile Include="Enum\ControlType.cs" />
     <Compile Include="Enum\TimerType.cs" />
     <Compile Include="Enum\ViewType.cs" />
-    <Compile Include="LongPolling\LongPoller.cs" />
     <Compile Include="Media\PlayAlertSound.cs" />
+    <Compile Include="Models\VisitorEventVO.cs" />
     <Compile Include="Overlays\AlertOverlay.xaml.cs">
       <DependentUpon>AlertOverlay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sse\SseClient.cs" />
+    <Compile Include="Sse\SseManager.cs" />
     <Compile Include="Utils\AlertMessages.cs" />
     <Compile Include="Utils\AppAlert.cs" />
     <Compile Include="Utils\AppGlobal.cs" />
     <Compile Include="Utils\AuthUtil.cs" />
-    <Compile Include="LongPolling\LongPollingManager.cs" />
     <Compile Include="Utils\JsonUtil.cs" />
     <Compile Include="Utils\RestUtil.cs" />
     <Compile Include="Views\AlertView.xaml.cs">
@@ -169,7 +170,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Sounds\notification.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\notification.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

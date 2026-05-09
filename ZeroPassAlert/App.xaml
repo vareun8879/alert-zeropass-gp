@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:ZeroPassAlert"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              Startup="Application_Startup"
-             StartupUri="MainWindow.xaml">
+             StartupUri="MainWindow.xaml"
+             ShutdownMode="OnExplicitShutdown">
     <Application.Resources>
         <!-- 화면 해상도 -->
         <sys:Double x:Key="ScreenWidth">1080</sys:Double>

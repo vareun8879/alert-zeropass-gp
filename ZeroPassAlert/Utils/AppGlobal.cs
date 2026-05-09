@@ -32,6 +32,8 @@ namespace ZeroPassAlert.Utils
         public static string CorpCode = "";
         public static string CorpName = "";
 
+        public static string GuardId = "";
+
         public static string PrivacyAgreeYn = "N";
         public static string SharingAgreeYn = "N";
         public static string VisitPurposeCode = "";
@@ -60,12 +62,12 @@ namespace ZeroPassAlert.Utils
         public static Hashtable SignatureData = new Hashtable();
 
         public static string BaseUrl = "";
-        //public static string KioskUrl = "/zeropass/kiosk/";
 
-        // 테스트용 설정
-        public static string KioskUrl = "/zeropass/kiosk/";
+        // 백엔드 AlertDataController 매핑: /api/zeropass/alert/data
+        // (BaseUrl 에 /api 가 포함되어 있음)
+        public static string AlertUrl = "/zeropass/alert/data/";
 
-        public static string APIUrl = $"{BaseUrl}{KioskUrl}";
+        public static string APIUrl = $"{BaseUrl}{AlertUrl}";
 
         // Barocert 인증 - 접수 아이디
         public static string ReceiptID = "";

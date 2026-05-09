@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using ZeroPassAlert.LongPolling;
-using ZeroPassAlert.Utils;
+using ZeroPassAlert.Models;
 
 namespace ZeroPassAlert.Overlays
 {
