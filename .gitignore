@@ -5,6 +5,8 @@ ZeroPassAlert/bin/**
 ZeroPassAlert/obj/
 ZeroPassAlert/obj/*
 ZeroPassAlert/obj/**
+ZeroPassAlertSetup/Debug/
+ZeroPassAlertSetup/Release/
 ZeroPassSetup/Debug/
 ZeroPassSetup/Release/
 ZeroPassUpdater/bin/
