@@ -15,11 +15,19 @@ namespace ZeroPassAlert.Views
     /// </summary>
     public partial class AlertView : UserControl
     {
+        private readonly MainWindow _parent;
+
         public AlertView() : this(null) { }
 
         public AlertView(MainWindow parent)
         {
+            _parent = parent;
             InitializeComponent();
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            _parent?.Close();
         }
         private async void AlertView_Loaded(object sender, RoutedEventArgs e)
         {

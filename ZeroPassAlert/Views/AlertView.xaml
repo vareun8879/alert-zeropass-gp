@@ -19,12 +19,26 @@
 
         <!-- 상단 헤더 -->
         <Border Background="#0E5775" Grid.Row="0">
-            <TextBlock Text="제로패스 방문자 알림 서비스"
-                       Foreground="White"
-                       VerticalAlignment="Center"
-                       FontSize="30"
-                       Margin="20,0,0,0"
-                       FontWeight="SemiBold"/>
+            <Grid>
+                <TextBlock Text="제로패스 방문자 알림 서비스"
+                           Foreground="White"
+                           VerticalAlignment="Center"
+                           FontSize="30"
+                           Margin="20,0,0,0"
+                           FontWeight="SemiBold"/>
+                <Button Content="✕"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Margin="0,0,16,0"
+                        Width="44"
+                        Height="44"
+                        FontSize="22"
+                        Foreground="White"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="CloseButton_Click"/>
+            </Grid>
         </Border>
 
         <!-- 본문 영역 -->

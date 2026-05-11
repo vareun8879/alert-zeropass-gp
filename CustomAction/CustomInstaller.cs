@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration.Install;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace CustomAction
 {
@@ -51,9 +49,17 @@ namespace CustomAction
             RemoveStartupFolderShortcut();
         }
 
-        private void CreateDesktopShortcut()
+        private string GetTargetDir()
         {
             string targetDir = Context.Parameters["targetdir"];
+            if (string.IsNullOrEmpty(targetDir))
+                targetDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            return targetDir;
+        }
+
+        private void CreateDesktopShortcut()
+        {
+            string targetDir = GetTargetDir();
             string exePath = Path.Combine(targetDir, ExecutableName);
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string shortcutPath = Path.Combine(desktopPath, ShortcutName);
@@ -63,7 +69,7 @@ namespace CustomAction
 
         private void CreateStartMenuShortcut()
         {
-            string targetDir = Context.Parameters["targetdir"];
+            string targetDir = GetTargetDir();
             string exePath = Path.Combine(targetDir, ExecutableName);
             string startMenuPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu), "Programs", ShortcutDescription);
             if (!Directory.Exists(startMenuPath))
@@ -77,7 +83,7 @@ namespace CustomAction
 
         private void CreateStartupFolderShortcut()
         {
-            string targetDir = Context.Parameters["targetdir"];
+            string targetDir = GetTargetDir();
             string exePath = Path.Combine(targetDir, ExecutableName);
             string startupFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
             string shortcutPath = Path.Combine(startupFolderPath, ShortcutName);
