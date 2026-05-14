@@ -177,6 +177,7 @@ namespace ZeroPassAlert.Sse
                         try
                         {
                             AppAlert.Instance.TodayVisitorCount = evt.Count;
+                            AppAlert.Instance.TodayDateText = evt.Today.ToString("yyyy년 MM월 dd일");
                             (Application.Current.MainWindow as MainWindow)?.ShowAlertOverlay(evt);
                         }
                         catch (Exception uiEx)

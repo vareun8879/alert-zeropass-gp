@@ -9,6 +9,7 @@ namespace ZeroPassAlert.Models
         public string VisitLoc { get; set; }
         public string VisitPurpose { get; set; }
         public long Count { get; set; }
+        public DateTime Today { get; set; }
         public DateTime VisitDt { get; set; }
     }
 
